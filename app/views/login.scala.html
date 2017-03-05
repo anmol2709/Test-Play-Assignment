@@ -5,23 +5,30 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row text-center">
    <center><h1>  LOGIN PAGE</h1></center>
       </div>
-    <div class = "row">
+
+    <form method="post">
+
         <br>
         <div class="row">
     <label><b>Email   :   </b></label>
-    <input type="email" placeholder="Enter Email" onfocus="this.placeholder=' '"
-           onblur="this.placeholder = 'Enter Email' " id="name" reqired>
+    <input type="text" placeholder="Enter UserName" onfocus="this.placeholder=' '"
+           onblur="this.placeholder = 'Enter Username' " id="name" required>
     </div><br><br>
     <div class="row ">
         <label><b>Password   :   </b></label>
     <input type="password" placeholder="Enter Password" onfocus=" this.placeholder=' '"
-           onblur="this.placeholder = 'Enter Password'" id="psw" required><br><br><br>
+           onblur="this.placeholder = 'Enter Password'" id="psw" required></div>
+    <br><br><br>
 <div class=" row text-center">
-    <button type="button" class = "btn-success " onclick="controllers.HomeController.checkDetails()">Login</button>
+    <input type="submit" class = "btn-success">Login</input>
     </div>
+ </form>
 </div>
+
+
 </body>
 </html>
+

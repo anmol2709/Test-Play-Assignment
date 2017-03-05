@@ -15,8 +15,13 @@
        <center>  <table class="table-striped text-center table-bordered">
 
 
-            
-             <td class="col-md-4"><label> Name</label></td> <td class="col-md-5"> <label>@user.name</label></td>
+             <td class="col-md-4"><label>First Name </label></td> <td class="col-md-5"> <label>@user.firstName</label></td>
+         </tr>
+         <tr>
+             <td class="col-md-4"><label>Middle Name</label></td> <td class="col-md-5"> <label>@user.middleName</label></td>
+         </tr>
+         <tr>
+             <td class="col-md-4"><label>Last Name</label></td> <td class="col-md-5"> <label>@user.lastName</label></td>
          </tr>
          <tr>
              <td class="col-md-4"><label>User Name</label></td> <td class="col-md-5"> <label>@user.userName</label></td>

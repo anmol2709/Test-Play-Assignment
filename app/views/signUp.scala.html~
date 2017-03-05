@@ -11,10 +11,24 @@
     <form method="post">
         <br>
 
-       
         <div class=" row ">
-            <label > Enter Name : </label>
-            <input type="text" name="name">
+        <label > Enter FirstName : </label>
+        <input type="text" name="firstName">
+        </div>
+
+        <br>
+
+        <div class=" row ">
+            <label > Enter MiddleName : </label>
+            <input  type="text" name="middleName">
+
+        </div>
+
+        <br>
+
+        <div class=" row ">
+            <label > Enter LastName : </label>
+            <input type="text" name="lastName">
         </div>
 
         <br>

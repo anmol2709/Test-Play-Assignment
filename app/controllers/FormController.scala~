@@ -12,7 +12,9 @@ class FormController extends Controller{
 
   val userForm = Form(
     mapping(
-      "name" -> nonEmptyText,
+      "firstName" -> nonEmptyText,
+      "middleName" -> text,
+      "lastName" -> nonEmptyText,
       "userName" -> nonEmptyText,
       "password" -> nonEmptyText,
       "verifyPassword"->nonEmptyText,
@@ -24,6 +26,14 @@ class FormController extends Controller{
       case data => (data.password == data.verifyPassword)
     }
     ))
+
+  val loginForm = Form(
+    mapping(
+      "username" -> nonEmptyText,
+      "password" -> nonEmptyText
+    )(Login.apply)(Login.unapply)
+  )
+
 
 
   val anyData = Map("name" -> "bob", "age" -> "18")
