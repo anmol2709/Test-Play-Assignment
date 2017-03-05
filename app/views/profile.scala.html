@@ -1,0 +1,27 @@
+
+@(user: controllers.User)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Here's where we render the page title `String`. *@
+
+@files()
+</head>
+<body>
+
+
+ <form >
+     <table class="table-striped table-bordered">
+         <tr>
+             <td><label>USER NAME</label></td> <td> <label>@user.name</label></td>
+         </tr>
+         <tr>
+             <td><label>AGE</label></td> <td> <label>@user.age</label></td>
+         </tr>
+</table>
+ </form>
+
+
+</body>
+</html>

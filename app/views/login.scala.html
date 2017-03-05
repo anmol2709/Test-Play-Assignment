@@ -1,0 +1,27 @@
+@()
+<html lang="en">
+<head>
+    @files()
+</head>
+<body>
+<div class="container">
+    <div class="row">
+   <center><h1>  LOGIN PAGE</h1></center>
+      </div>
+    <div class = "row">
+        <br>
+        <div class="row">
+    <label><b>Email   :   </b></label>
+    <input type="email" placeholder="Enter Email" onfocus="this.placeholder=' '"
+           onblur="this.placeholder = 'Enter Email' " id="name" reqired>
+    </div><br><br>
+    <div class="row ">
+        <label><b>Password   :   </b></label>
+    <input type="password" placeholder="Enter Password" onfocus=" this.placeholder=' '"
+           onblur="this.placeholder = 'Enter Password'" id="psw" required><br><br><br>
+<div class=" row text-center">
+    <button type="button" class = "btn-success " onclick="controllers.HomeController.checkDetails()">Login</button>
+    </div>
+</div>
+</body>
+</html>
